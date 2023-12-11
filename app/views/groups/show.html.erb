@@ -1,0 +1,9 @@
+<h2><%= @group.name %> Transactions</h2>
+Total Amount: <%= @total_amount %>
+
+<% @group.deals.order(created_at: :desc).each do |deal| %>
+  <%= render deal %>
+<% end %>
+
+<%= link_to "Add a new transaction", new_group_deal_path(@group), class: "btn" %>
+<%= link_to "Back to categories", groups_path %>

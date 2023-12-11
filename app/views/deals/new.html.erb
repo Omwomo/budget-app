@@ -1,0 +1,32 @@
+<%= form_with(model: @deal, url: group_deals_path(@group), local: true) do |form| %>
+  <% if @deal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deal.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% @deal.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.number_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categories %>
+    <%= form.collection_select :group_id, current_user.groups, :id, :name, { prompt: "Select Category" }, { multiple: true } %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "create transaction" %>
+  </div>
+<% end %>
