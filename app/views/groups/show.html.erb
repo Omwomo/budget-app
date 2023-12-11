@@ -1,5 +1,5 @@
 <h2><%= @group.name %> Transactions</h2>
-Total Amount: <%# @group.deals.sum(:amount) %> <!-- Calculate total amount -->
+Total Amount: <%= @total_amount %>
 
 <% @group.deals.order(created_at: :desc).each do |deal| %>
   <%= render deal %>

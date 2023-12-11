@@ -5,6 +5,7 @@
 <div id="groups">
   <% @groups.each do |group| %>
     <%= render group %>
+    Total Amount: <%= @total_amounts[group.id] || 0 %>
     <p>
       <%= link_to "See transactions", group %>
     </p>

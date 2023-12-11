@@ -1,23 +1,13 @@
 class DealsController < ApplicationController
-  before_action :set_deal, only: %i[show edit destroy]
-
   # GET /deals or /deals.json
   def index
-    @deals = Deal.all
-  end
-
-  # GET /deals/1 or /deals/1.json
-  def show
+    @deals = Deal.includes([:group])
   end
 
   # GET /deals/new
   def new
     @group = Group.find(params[:group_id])
     @deal = @group.deals.build(user_id: current_user.id)
-  end
-
-  # GET /deals/1/edit
-  def edit
   end
 
   # POST /deals or /deals.json
@@ -30,21 +20,9 @@ class DealsController < ApplicationController
     respond_to do |format|
       if @deal.save
         format.html { redirect_to group_path(@group), notice: 'Transaction was successfully created.' }
-        format.json { render :show, status: :created, location: @deal }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @deal.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /deals/1 or /deals/1.json
-  def destroy
-    @deal.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to deals_url, notice: "Deal was successfully destroyed." }
-      format.json { head :no_content }
     end
   end
 
