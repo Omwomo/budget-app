@@ -3,16 +3,18 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.all
+    @groups = Group.includes([:user]).where(user: current_user)
   end
 
   # GET /groups/1 or /groups/1.json
   def show
+    @group = Group.find(params[:id])
+    @deal = Deal.new(group: @group)
   end
 
   # GET /groups/new
   def new
-    @group = Group.new
+    @group = current_user.groups.build
   end
 
   # GET /groups/1/edit
