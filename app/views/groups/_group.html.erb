@@ -1,5 +1,5 @@
-<div id="<%= dom_id group %>" class="categories">
-  <div class="category">
+<%= link_to group_path(group) do %>
+  <div id="<%= dom_id(group) %>" class="category">
     <img src="<%= group.icon %>" class="icon" />
 
     <div class="name-created">
@@ -15,4 +15,4 @@
       $ <%= @total_amounts[group.id] || 0 %>
     </div>
   </div>
-</div>
+<% end %>

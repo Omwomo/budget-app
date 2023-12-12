@@ -1,14 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<div class="category-page">
+  <div class="nav-area">
+    <h1>CATEGORIES</h1>
+    <p style="color: green"><%= notice %></p>
+  </div>
 
-<h1>Groups</h1>
-
-<div id="groups">
-  <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "See transactions", group %>
-    </p>
-  <% end %>
+  <div id="groups" class="categories">
+    <% @groups.each do |group| %>
+      <%= render group %>
+    <% end %>
+  </div>
+  <div class="add-category">
+    <button class="new-category-btn">
+      <%= link_to "ADD CATEGORY", new_group_path %>
+    </button>
+  </div>
 </div>
-
-<%= link_to "New category", new_group_path %>
