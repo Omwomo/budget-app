@@ -1,32 +1,21 @@
-<div id="<%= dom_id deal %>">
-  <p>
-    <strong>Author:</strong>
-    <%= deal.author_id %>
-  </p>
-
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id deal%>" class="transacted-item">
+  <div class="t-name p">
+    <h4>Name</h4>
     <%= deal.name %>
-  </p>
+  </div>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= deal.amount %>
-  </p>
+  <hr class="t-hr"/>
 
-  <p>
-    <strong>Created at:</strong>
+  <div class="t-created p">
+    <h4>Transacted at</h4>
     <%= deal.created_at %>
-  </p>
+  </div>
 
-  <p>
-    <strong>User:</strong>
-    <%= deal.user_id %>
-  </p>
+  <hr class="t-hr"/>
 
-  <p>
-    <strong>Group:</strong>
-    <%= deal.group_id %>
-  </p>
+  <div class="t-amount t p">
+    <h3>TOTAL PAYMENT</h3>
+    <p>$<%= deal.amount %></p>
+  </div>
 
 </div>

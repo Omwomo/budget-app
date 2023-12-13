@@ -1,15 +1,164 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  color: #434b54;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f4f7;
+}
+
+.categories {
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #fff;
+  align-items: center;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.created {
+  margin-bottom: auto;
+}
+
+.total {
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-area {
+  background-color: #3778c2;
+  text-align: center;
+  height: 5rem;
+  color: #fff
+}
+
+.add-category {
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.new-category-btn {
+  border: 2px solid #ffffffbd;
+  width: 95%;
+  height: 70%;
+  background-color: #5fb523;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.splash-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.splash-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logins {
+  width: 90%;
+  border: none;
+  background-color: #f3f4f7;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.logins:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.log-in {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.log-in .field input[type="email"],
+.log-in .field input[type="text"],
+.log-in .field input[type="password"] {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  height: 2rem;
+}
+
+hr {
+  width: 97%;
+  margin-left: auto;
+  color: #e7e9ee9d;
+}
+
+.log-in .field input::placeholder {
+  color: #999;
+}
+
+.t {
+  display: flex;
+}
+
+.t-hr {
+  width: 90%;
+  margin-inline: auto;
+  margin: 1rem;
+}
+
+.transacted-item {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.transacted-item .p {
+  margin-left: 1rem;
+}
+
+.p p {
+  margin-left: auto;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h1, h2 {
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
