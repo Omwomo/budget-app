@@ -1,9 +1,4 @@
 class DealsController < ApplicationController
-  # GET /deals or /deals.json
-  def index
-    @deals = Deal.includes([:group])
-  end
-
   # GET /deals/new
   def new
     @group = Group.find(params[:group_id])
