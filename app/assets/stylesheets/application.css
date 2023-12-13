@@ -51,6 +51,7 @@ a {
   background-color: #3778c2;
   text-align: center;
   height: 5rem;
+  color: #fff
 }
 
 .add-category {
@@ -125,4 +126,39 @@ hr {
 
 .log-in .field input::placeholder {
   color: #999;
+}
+
+.t {
+  display: flex;
+}
+
+.t-hr {
+  width: 90%;
+  margin-inline: auto;
+  margin: 1rem;
+}
+
+.transacted-item {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.transacted-item .p {
+  margin-left: 1rem;
+}
+
+.p p {
+  margin-left: auto;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h1, h2 {
+  color: #fff;
+  margin-bottom: 0.8rem;
 }
