@@ -1,17 +1,18 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
+<%= link_to group_path(group) do %>
+  <div id="<%= dom_id(group) %>" class="category">
+    <img src="<%= group.icon %>" class="icon" />
 
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+    <div class="name-created">
+      <div class="name">
+        <%= group.name %>
+      </div>
+      <div class="created">
+        <%= group.created_at %>
+      </div>
+    </div>
 
-  <p>
-    <strong>Created at:</strong>
-    <%= group.created_at %>
-  </p>
-
-</div>
+    <div class="total">
+      $ <%= @total_amounts[group.id] || 0 %>
+    </div>
+  </div>
+<% end %>
