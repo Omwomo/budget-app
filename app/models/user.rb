@@ -8,6 +8,6 @@ class User < ApplicationRecord
   has_many :deals
 
   validates :name, presence: true
-  validates :email, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: { case_sensitive: true }
   validates :password, presence: true, length: { minimum: 6 }, on: :create
 end
