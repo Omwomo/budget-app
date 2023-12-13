@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #e7e9ee;
+  background-color: #f3f4f7;
 }
 
 .categories {
@@ -81,4 +81,48 @@ a {
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+.splash-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logins {
+  width: 90%;
+  border: none;
+  background-color: #f3f4f7;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.logins:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.log-in {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.log-in .field input[type="email"],
+.log-in .field input[type="text"],
+.log-in .field input[type="password"] {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  height: 2rem;
+}
+
+hr {
+  width: 97%;
+  margin-left: auto;
+  color: #e7e9ee9d;
+}
+
+.log-in .field input::placeholder {
+  color: #999;
 }
