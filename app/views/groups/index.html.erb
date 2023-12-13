@@ -2,6 +2,13 @@
   <div class="nav-area">
     <h1>CATEGORIES</h1>
     <p style="color: green"><%= notice %></p>
+    <% if user_signed_in? %>
+      <form action="<%= destroy_user_session_path %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <button type="submit" class="btn btn-danger">Logout</button>
+      </form>
+    <% end %>
   </div>
 
   <div id="groups" class="categories">
