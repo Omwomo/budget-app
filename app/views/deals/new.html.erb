@@ -1,3 +1,14 @@
+<div class="nav-area">
+    <div class="back-icon">
+      <%= link_to group_path(@group) do %>
+        <i class="fas fa-arrow-left"></i>
+      <% end %>
+    </div>
+    <div class="nav-details">
+      <h2>Add New Category</h2>
+    </div>
+  </div>
+
 <%= form_with(model: @deal, url: group_deals_path(@group), local: true) do |form| %>
   <% if @deal.errors.any? %>
     <div id="error_explanation">
