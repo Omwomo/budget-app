@@ -122,7 +122,8 @@ people.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
-- Microverse Review Team
+- Gregorie Vella who is the original author of this design on Behance.
+- Microverse Review Team for giving me this opportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
