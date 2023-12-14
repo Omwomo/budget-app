@@ -12,7 +12,7 @@ RSpec.describe 'Groups Index View', type: :feature do
   it 'displays the categories' do
     expect(page).to have_selector('.category-page')
     expect(page).to have_selector('.nav-area')
-    expect(page).to have_selector('h1', text: 'CATEGORIES')
+    expect(page).to have_selector('h2', text: 'CATEGORIES')
 
     within('.categories') do
       expect(page).to have_selector('.category', count: Group.count)

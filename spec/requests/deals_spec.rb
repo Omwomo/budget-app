@@ -20,9 +20,9 @@ RSpec.describe 'Deals', type: :request do
     it 'creates a new deal' do
       valid_params = { deal: { name: 'Test Deal', amount: 100, user_id: @user.id, group_id: @group.id } }
 
-      expect {
+      expect do
         post "/groups/#{@group.id}/deals", params: valid_params
-      }.to change(Deal, :count).by(1)
+      end.to change(Deal, :count).by(1)
 
       expect(response).to redirect_to(group_path(@group))
       expect(flash[:notice]).to eq('Transaction was successfully created.')
@@ -31,9 +31,9 @@ RSpec.describe 'Deals', type: :request do
     it 'does not create a deal with invalid params' do
       invalid_params = { deal: { name: '', amount: nil, user_id: @user.id, group_id: @group.id } }
 
-      expect {
+      expect do
         post "/groups/#{@group.id}/deals", params: invalid_params
-      }.to_not change(Deal, :count)
+      end.to_not change(Deal, :count)
 
       expect(response).to have_http_status(:unprocessable_entity)
     end

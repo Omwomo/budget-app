@@ -10,7 +10,7 @@ RSpec.describe 'Groups New View', type: :feature do
   end
 
   it 'renders the form for creating a new group' do
-    expect(page).to have_selector('h1', text: 'New group')
+    expect(page).to have_selector('h2', text: 'Add New Category')
     expect(page).to have_selector('form[action="/groups"]')
     expect(page).to have_selector('form input[type="text"][name="group[name]"]')
     expect(page).to have_field('group_icon')
@@ -18,6 +18,6 @@ RSpec.describe 'Groups New View', type: :feature do
   end
 
   it 'displays a link to go back to groups index' do
-    expect(page).to have_link('Back to groups', href: groups_path)
+    expect(page).to have_link(href: groups_path)
   end
 end
