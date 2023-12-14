@@ -35,9 +35,9 @@ RSpec.describe 'Groups', type: :request do
     it 'creates a new group' do
       valid_params = { group: { name: 'New Group Name', icon: 'icon.png', created_at: Time.now } }
 
-      expect {
+      expect do
         post '/groups', params: valid_params
-      }.to change(Group, :count).by(1)
+      end.to change(Group, :count).by(1)
 
       expect(response).to redirect_to('/groups')
       expect(flash[:notice]).to eq('Category was successfully created.')

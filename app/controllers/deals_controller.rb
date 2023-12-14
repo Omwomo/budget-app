@@ -1,4 +1,8 @@
 class DealsController < ApplicationController
+  def index
+    # Index action logic here
+  end
+
   # GET /deals/new
   def new
     @group = Group.find(params[:group_id])
