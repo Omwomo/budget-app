@@ -47,6 +47,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+LIVE DEMO
+
+> Visit the [Live](https://omwomo-budget-app.onrender.com/) page of the Project.
+
+> Click this [link](https://drive.google.com/file/d/1YT7l3n89hCyOkc5Xh8FYg18MLPud_h4A/view?usp=sharing) to watch a short video on the features of the project.
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
