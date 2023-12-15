@@ -1,5 +1,21 @@
 <div class="log-in">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="nav-area">
+      <div class="back-icon">
+        <%= link_to home_path do %>
+          <i class="fas fa-arrow-left"></i>
+        <% end %>
+      </div>
+
+      <div class="nav-detail">
+        <h3>LOGIN</h3>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Log In", class: "login-page" %>
+      </div>
+    </div>
+
     <div class="field">
       <%= f.email_field :email, placeholder: "Email" %>
     </div>
@@ -9,11 +25,11 @@
     <div class="field">
       <%= f.password_field :password, placeholder: "Password" %>
     </div>
-
-    <div class="actions">
-      <%= f.submit "Log in", class: "logins" %>
-    </div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
+  <div class="forgot">
+    <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+      <%= link_to "Forgot password ?", new_password_path(resource_name) %><br />
+    <% end %>
+  </div>
 </div>
