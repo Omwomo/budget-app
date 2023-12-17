@@ -63,6 +63,10 @@ button {
   display: flex;
 }
 
+.logout {
+  margin-top: 20%;
+}
+
 .nav-details {
   margin-inline: auto;
 }
@@ -117,7 +121,7 @@ input.login-page {
 
 .btn-danger {
   position: fixed;
-  top: 0.5rem;
+  top: 0.2rem;
   right: 0.5rem;
   border: none;
   color: #fff;
@@ -243,4 +247,12 @@ h2 {
 
 .new-category {
   text-align: center;
+}
+
+.notice {
+  background-color: #3778c2;
+  color: #7ac943;
+  text-align: center;
+  border: none;
+  margin: 0;
 }
