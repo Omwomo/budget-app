@@ -1,0 +1,258 @@
+* {
+  color: #434b54;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f4f7;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.categories {
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #fff;
+  align-items: center;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.created {
+  margin-bottom: auto;
+}
+
+.total {
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-area {
+  background-color: #3778c2;
+  text-align: center;
+  height: 4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  display: flex;
+}
+
+.logout {
+  margin-top: 20%;
+}
+
+.nav-details {
+  margin-inline: auto;
+}
+
+.nav-detail {
+  margin-inline: auto;
+  display: flex;
+  align-items: end;
+  padding: 1rem;
+  padding-left: 10%;
+}
+
+h3 {
+  color: #fff;
+  padding-left: 10%;
+  font-weight: 500;
+}
+
+.nav-area .actions {
+  display: flex;
+}
+
+input.login-page {
+  margin-left: auto;
+  border: none;
+  background-color: #3778c2;
+  color: #ffffffb0;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  font-size: 1rem;
+}
+
+.nav-details p {
+  color: #fff;
+}
+
+.forgot {
+  margin-top: 1.5rem;
+  color: #434b547c;
+  font-weight: 600;
+}
+
+.back-icon {
+  padding: 0.5rem;
+}
+
+.back-icon i {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.btn-danger {
+  position: fixed;
+  top: 0.2rem;
+  right: 0.5rem;
+  border: none;
+  color: #fff;
+  background-color: #3778c2;
+}
+
+.log-out {
+  width: 10%;
+}
+
+.nav-area .c {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.add-category {
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.new-category-btn {
+  border: 2px solid #ffffffbd;
+  width: 95%;
+  height: 70%;
+  background-color: #5fb523;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.splash-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.splash-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logins {
+  width: 90%;
+  border: none;
+  background-color: #f3f4f7;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.logins:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.log-in {
+  text-align: center;
+}
+
+.log-in .field input[type="email"],
+.log-in .field input[type="text"],
+.log-in .field input[type="password"] {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  height: 2rem;
+}
+
+hr {
+  width: 97%;
+  margin-left: auto;
+  color: #e7e9ee9d;
+}
+
+.log-in .field input::placeholder {
+  color: #999;
+}
+
+.t {
+  display: flex;
+}
+
+.t-hr {
+  width: 90%;
+  margin-inline: auto;
+  margin: 1rem;
+}
+
+.transacted-item {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.transacted-item .p {
+  margin-left: 1rem;
+}
+
+.p p {
+  margin-left: auto;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.new-category {
+  text-align: center;
+}
+
+.notice {
+  background-color: #3778c2;
+  color: #7ac943;
+  text-align: center;
+  border: none;
+  margin: 0;
+}

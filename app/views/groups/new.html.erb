@@ -1,0 +1,15 @@
+<div class="new-category">
+  <div class="nav-area">
+    <div class="back-icon">
+      <%= link_to groups_path do %>
+        <i class="fas fa-arrow-left"></i>
+      <% end %>
+    </div>
+    <div class="nav-details">
+      <h2>Add New Category</h2>
+    </div>
+  </div>
+
+  <%= render "form", group: @group %>
+
+</div>

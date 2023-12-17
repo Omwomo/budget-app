@@ -1,0 +1,21 @@
+<div id="<%= dom_id deal%>" class="transacted-item">
+  <div class="t-name p">
+    <h4>Name</h4>
+    <%= deal.name %>
+  </div>
+
+  <hr class="t-hr"/>
+
+  <div class="t-created p">
+    <h4>Transacted at</h4>
+    <%= deal.created_at %>
+  </div>
+
+  <hr class="t-hr"/>
+
+  <div class="t-amount t p">
+    <h4>TOTAL PAYMENT</h4>
+    <p>$<%= deal.amount %></p>
+  </div>
+
+</div>
